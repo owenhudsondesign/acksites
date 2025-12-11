@@ -23,34 +23,35 @@ export default function Header() {
         >
             <div className="container-custom flex items-center justify-between">
                 {/* Logo - switches between white and color based on scroll */}
-                <a href="#" className="flex items-center transition-transform duration-300 hover:scale-105 relative">
+                <a href="#" className="flex items-center transition-transform duration-300 hover:scale-105 relative shrink-0">
                     <Image
                         src="/acksites-logo-white.svg"
                         alt="AckSites"
-                        width={160}
-                        height={32}
+                        width={140}
+                        height={28}
                         priority
-                        className={`h-8 w-auto absolute transition-opacity duration-500 ${isScrolled ? 'opacity-0' : 'opacity-100'}`}
+                        className={`h-6 md:h-8 w-auto absolute transition-opacity duration-500 ${isScrolled ? 'opacity-0' : 'opacity-100'}`}
                     />
                     <Image
                         src="/acksites-logo.svg"
                         alt="AckSites"
-                        width={160}
-                        height={32}
+                        width={140}
+                        height={28}
                         priority
-                        className={`h-8 w-auto transition-opacity duration-500 ${isScrolled ? 'opacity-100' : 'opacity-0'}`}
+                        className={`h-6 md:h-8 w-auto transition-opacity duration-500 ${isScrolled ? 'opacity-100' : 'opacity-0'}`}
                     />
                 </a>
 
                 {/* CTA Button - switches style based on scroll */}
                 <a
                     href="#contact"
-                    className={`inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-sm transition-all duration-500 ${isScrolled
+                    className={`inline-flex items-center gap-2 px-4 py-2 md:px-6 md:py-3 rounded-full font-semibold text-xs md:text-sm transition-all duration-500 shrink-0 ${isScrolled
                         ? 'bg-[#ff9433] text-white hover:bg-[#e67d1a]'
                         : 'bg-white text-[#191919] hover:bg-white/90'
                     }`}
                 >
-                    Start a Project
+                    <span className="hidden sm:inline">Start a Project</span>
+                    <span className="sm:hidden">Contact</span>
                     <svg
                         className="w-4 h-4"
                         fill="none"
