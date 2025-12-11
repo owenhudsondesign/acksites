@@ -41,13 +41,13 @@ export default function Hero() {
             </div>
 
             {/* Nantucket icon - large decorative element */}
-            <div className="absolute right-[10%] top-1/2 -translate-y-1/2 opacity-10 pointer-events-none">
+            <div className="absolute left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-[10%] top-1/2 -translate-y-1/2 opacity-10 pointer-events-none">
                 <Image
                     src="/nantucket-icon-white.svg"
                     alt=""
                     width={800}
                     height={520}
-                    className="w-[500px] md:w-[700px] lg:w-[800px] h-auto"
+                    className="w-[400px] md:w-[700px] lg:w-[800px] h-auto"
                     aria-hidden="true"
                 />
             </div>
