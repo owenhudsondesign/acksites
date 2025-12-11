@@ -53,10 +53,10 @@ export default function Hero() {
             </div>
 
             {/* Content */}
-            <div className="container-custom pt-32 md:pt-24 pb-24 relative z-10 w-full">
+            <div className="container-custom pt-40 md:pt-32 pb-24 relative z-10 w-full">
                 <div className="max-w-5xl">
-                    {/* Eyebrow */}
-                    <div className="reveal opacity-0 flex items-center gap-3 mb-8">
+                    {/* Eyebrow - hidden on mobile since logo is visible */}
+                    <div className="reveal opacity-0 hidden md:flex items-center gap-3 mb-8">
                         <span className="w-8 h-[2px] bg-white"></span>
                         <p className="text-sm tracking-[0.15em] uppercase text-white/70 font-medium">
                             Nantucket Web Design
