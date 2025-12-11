@@ -28,9 +28,31 @@ export default function Contact() {
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setIsSubmitting(true);
-        // Simulate submission delay
-        await new Promise((resolve) => setTimeout(resolve, 1000));
-        setIsSubmitted(true);
+
+        const formData = new FormData(e.currentTarget);
+        const data = {
+            name: formData.get('name'),
+            email: formData.get('email'),
+            business: formData.get('business'),
+            message: formData.get('message'),
+        };
+
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data),
+            });
+
+            if (response.ok) {
+                setIsSubmitted(true);
+            } else {
+                alert('Something went wrong. Please email us directly at hello@acksites.com');
+            }
+        } catch {
+            alert('Something went wrong. Please email us directly at hello@acksites.com');
+        }
+
         setIsSubmitting(false);
     };
 
