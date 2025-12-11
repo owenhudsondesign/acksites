@@ -53,7 +53,7 @@ export default function Hero() {
             </div>
 
             {/* Content */}
-            <div className="container-custom py-24 relative z-10 w-full">
+            <div className="container-custom pt-32 md:pt-24 pb-24 relative z-10 w-full">
                 <div className="max-w-5xl">
                     {/* Eyebrow */}
                     <div className="reveal opacity-0 flex items-center gap-3 mb-8">
