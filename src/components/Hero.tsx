@@ -89,8 +89,8 @@ export default function Hero() {
                     </div>
 
                     {/* Trust indicators */}
-                    <div className="reveal opacity-0 animation-delay-400 mt-20 pt-8 border-t border-white/20">
-                        <div className="flex flex-wrap gap-10 text-white/80 text-sm font-medium">
+                    <div className="reveal opacity-0 animation-delay-400 mt-12 md:mt-20 pt-8 pb-8 border-t border-white/20">
+                        <div className="flex flex-wrap gap-6 md:gap-10 text-white/80 text-sm font-medium">
                             <div className="flex items-center gap-2">
                                 <span className="w-2 h-2 rounded-full bg-white"></span>
                                 <span>100% Local</span>
