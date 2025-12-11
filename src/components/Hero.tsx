@@ -47,7 +47,7 @@ export default function Hero() {
                     alt=""
                     width={800}
                     height={520}
-                    className="w-[400px] md:w-[700px] lg:w-[800px] h-auto"
+                    className="w-[600px] md:w-[700px] lg:w-[800px] h-auto"
                     aria-hidden="true"
                 />
             </div>
