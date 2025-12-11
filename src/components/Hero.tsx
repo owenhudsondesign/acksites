@@ -76,7 +76,7 @@ export default function Hero() {
 
                     {/* Main headline */}
                     <h1 className="reveal opacity-0 animation-delay-100 text-5xl md:text-7xl lg:text-8xl font-semibold text-white leading-[1.05] tracking-tight mb-8">
-                        We build websites
+                        We create websites
                         <br />
                         for <span className="text-white/90">island businesses</span>
                     </h1>
