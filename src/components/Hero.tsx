@@ -53,7 +53,7 @@ export default function Hero() {
             </div>
 
             {/* Content */}
-            <div className="container-custom pt-28 md:pt-32 pb-24 relative z-10 w-full mt-16 md:mt-0">
+            <div className="container-custom pb-24 relative z-10 w-full" style={{ paddingTop: '120px' }}>
                 <div className="max-w-5xl">
                     {/* Eyebrow - hidden on mobile since logo is visible */}
                     <div className="reveal opacity-0 hidden md:flex items-center gap-3 mb-8">
