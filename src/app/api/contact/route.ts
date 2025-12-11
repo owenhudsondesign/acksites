@@ -1,11 +1,11 @@
 import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(request: Request) {
     try {
         const { name, email, business, message } = await request.json();
+
+        const resend = new Resend(process.env.RESEND_API_KEY);
 
         await resend.emails.send({
             from: 'AckSites <onboarding@resend.dev>',
