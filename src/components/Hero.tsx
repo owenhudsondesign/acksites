@@ -27,7 +27,7 @@ export default function Hero() {
     return (
         <section
             ref={heroRef}
-            className="min-h-screen flex items-center relative"
+            className="min-h-screen flex items-center relative overflow-hidden"
         >
             {/* Background image */}
             <div className="absolute inset-0">
@@ -41,14 +41,13 @@ export default function Hero() {
             </div>
 
             {/* Nantucket icon - large decorative element */}
-            <div className="absolute left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-[10%] top-1/2 -translate-y-1/2 opacity-10 pointer-events-none">
+            <div className="absolute left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-[-5%] top-1/2 -translate-y-1/2 opacity-10 pointer-events-none">
                 <Image
                     src="/nantucket-icon-white.svg"
                     alt=""
                     width={1200}
                     height={780}
-                    className="h-auto max-w-none"
-                    style={{ width: '140vw', minWidth: '140vw' }}
+                    className="h-auto w-[90vw] md:w-[65vw]"
                     aria-hidden="true"
                 />
             </div>
