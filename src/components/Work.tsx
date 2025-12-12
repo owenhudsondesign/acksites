@@ -1,25 +1,32 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import Image from 'next/image';
 
 const projects = [
     {
-        name: 'Island Contractor Co.',
-        description: 'Service business site with booking integration',
+        name: 'Rodriguez Laundry',
+        description: 'Laundry pickup & delivery service for vacation rentals',
         category: 'Service Business',
-        color: '#1a365d',
+        color: '#1e3a5f',
+        image: '/images/rodriguez-laundry.jpg',
+        url: 'https://rodriguezlaundry.vercel.app/',
     },
     {
-        name: 'Nantucket Provisions',
-        description: 'E-commerce for a local specialty food shop',
-        category: 'E-commerce',
-        color: '#744210',
+        name: 'Tito Construction',
+        description: 'Custom carpentry & construction services',
+        category: 'Construction',
+        color: '#b45309',
+        image: '/images/tito-construction.jpg',
+        url: 'https://titoconstruction.vercel.app/',
     },
     {
-        name: 'Harbor Property Management',
-        description: 'Portfolio site for vacation rentals',
-        category: 'Real Estate',
-        color: '#234e52',
+        name: 'Sunshine Cleaning',
+        description: 'Professional cleaning for homes & vacation rentals',
+        category: 'Service Business',
+        color: '#f59e0b',
+        image: '/images/sunshine-cleaning.jpg',
+        url: 'https://sunshine-cleaning-ruddy.vercel.app/',
     },
 ];
 
@@ -60,9 +67,12 @@ export default function Work() {
                 {/* Projects grid */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                     {projects.map((project, index) => (
-                        <div
+                        <a
                             key={index}
-                            className={`reveal opacity-0 animation-delay-${(index + 2) * 100} group cursor-pointer`}
+                            href={project.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`reveal opacity-0 animation-delay-${(index + 2) * 100} group cursor-pointer block`}
                         >
                             <div className="card-hover bg-[#252525] rounded-2xl overflow-hidden h-full">
                                 {/* Preview area */}
@@ -75,27 +85,25 @@ export default function Work() {
                                     {/* Browser mockup */}
                                     <div className="absolute inset-4 top-6 bg-white rounded-lg shadow-2xl overflow-hidden transform group-hover:scale-105 transition-transform duration-500">
                                         {/* Browser chrome */}
-                                        <div className="bg-gray-100 px-4 py-3 flex items-center gap-2 border-b border-gray-200">
+                                        <div className="bg-gray-100 px-3 py-2 flex items-center gap-2 border-b border-gray-200">
                                             <div className="flex gap-1.5">
-                                                <div className="w-3 h-3 rounded-full bg-[#ff5f57]"></div>
-                                                <div className="w-3 h-3 rounded-full bg-[#febc2e]"></div>
-                                                <div className="w-3 h-3 rounded-full bg-[#28c840]"></div>
+                                                <div className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]"></div>
+                                                <div className="w-2.5 h-2.5 rounded-full bg-[#febc2e]"></div>
+                                                <div className="w-2.5 h-2.5 rounded-full bg-[#28c840]"></div>
                                             </div>
-                                            <div className="flex-1 bg-white rounded-md text-xs text-gray-400 px-3 py-1.5 text-center font-mono">
-                                                {project.name.toLowerCase().replace(/\s+/g, '').replace(/&/g, '')}.com
+                                            <div className="flex-1 bg-white rounded-md text-[10px] text-gray-400 px-2 py-1 text-center font-mono truncate">
+                                                {project.name.toLowerCase().replace(/\s+/g, '')}.com
                                             </div>
                                         </div>
-                                        {/* Website preview */}
-                                        <div
-                                            className="h-full p-6"
-                                            style={{
-                                                background: `linear-gradient(180deg, white 0%, ${project.color}08 100%)`,
-                                            }}
-                                        >
-                                            <div className="w-20 h-2 bg-gray-200 rounded mb-3"></div>
-                                            <div className="w-32 h-4 rounded mb-2" style={{ backgroundColor: project.color + '40' }}></div>
-                                            <div className="w-full h-2 bg-gray-100 rounded mb-2"></div>
-                                            <div className="w-3/4 h-2 bg-gray-100 rounded"></div>
+                                        {/* Website preview screenshot */}
+                                        <div className="relative w-full h-[calc(100%-32px)]">
+                                            <Image
+                                                src={project.image}
+                                                alt={`${project.name} website preview`}
+                                                fill
+                                                className="object-cover object-top"
+                                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                            />
                                         </div>
                                     </div>
                                 </div>
@@ -111,7 +119,7 @@ export default function Work() {
                                     <p className="text-gray-400 text-sm">{project.description}</p>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     ))}
                 </div>
 
