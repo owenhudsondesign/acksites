@@ -97,7 +97,7 @@ export default function Hero() {
                             </div>
                             <div className="flex items-center gap-2">
                                 <span className="w-2 h-2 rounded-full bg-white"></span>
-                                <span>2 Week Delivery</span>
+                                <span>48 Hour Turnaround</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <span className="w-2 h-2 rounded-full bg-white"></span>

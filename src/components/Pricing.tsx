@@ -24,7 +24,7 @@ const tiers = [
         features: [
             'Custom design & branding',
             'Unlimited pages',
-            'Advanced SEO optimization',
+            'SEO optimized',
             'Booking/reservation systems',
             'Optional custom CMS/dashboard',
             'Priority support',
@@ -34,7 +34,7 @@ const tiers = [
     },
     {
         name: 'Hosting & Care',
-        price: '$25',
+        price: '$20',
         period: '/month',
         description: 'Keep your site online and up to date.',
         features: [

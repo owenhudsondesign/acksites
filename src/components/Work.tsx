@@ -52,8 +52,19 @@ export default function Work() {
     }, []);
 
     return (
-        <section id="work" ref={sectionRef} className="section-padding bg-[#191919]">
-            <div className="container-custom">
+        <section id="work" ref={sectionRef} className="section-padding bg-[#191919] relative overflow-hidden">
+            {/* Background image */}
+            <div className="absolute inset-0">
+                <Image
+                    src="/images/beautiful-landscape-view-ocean.jpg"
+                    alt=""
+                    fill
+                    className="object-cover opacity-50"
+                />
+                <div className="absolute inset-0 bg-[#191919]/50"></div>
+            </div>
+
+            <div className="container-custom relative z-10">
                 {/* Section header */}
                 <div className="text-center mb-16 lg:mb-20">
                     <span className="reveal opacity-0 inline-block text-[#ff9433] font-semibold text-sm uppercase tracking-wider mb-4">
