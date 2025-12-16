@@ -56,12 +56,11 @@ export default function Work() {
             {/* Background image */}
             <div className="absolute inset-0">
                 <Image
-                    src="/images/beautiful-landscape-view-ocean.jpg"
+                    src="/images/acksites-bg-blue.png"
                     alt=""
                     fill
-                    className="object-cover opacity-50"
+                    className="object-cover opacity-80"
                 />
-                <div className="absolute inset-0 bg-[#191919]/50"></div>
             </div>
 
             <div className="container-custom relative z-10">

@@ -175,8 +175,22 @@ export default function Pricing() {
                     ))}
                 </div>
 
+                {/* Logo/Design services note */}
+                <div className="reveal opacity-0 text-center mt-12 lg:mt-16 p-6 bg-[#faf9f7] rounded-2xl max-w-2xl mx-auto border border-gray-100">
+                    <p className="text-[#191919] font-semibold mb-1">
+                        Need a logo or custom graphics?
+                    </p>
+                    <p className="text-[#4d4d4d] text-sm">
+                        We also offer logo design, brand identity, and custom graphic design services.{' '}
+                        <a href="#contact" className="text-[#ff9433] font-medium hover:underline">
+                            Get in touch
+                        </a>{' '}
+                        for a quote.
+                    </p>
+                </div>
+
                 {/* Bottom note */}
-                <p className="reveal opacity-0 text-center text-[#717171] text-sm mt-12">
+                <p className="reveal opacity-0 text-center text-[#717171] text-sm mt-6">
                     All prices are one-time unless noted. Looking for something custom?{' '}
                     <a href="#contact" className="text-[#ff9433] font-medium hover:underline">
                         Let&apos;s talk
