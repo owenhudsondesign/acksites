@@ -38,13 +38,6 @@ export default function Hero() {
                     priority
                     className="object-cover"
                 />
-                {/* Sky texture overlay */}
-                <Image
-                    src="/images/sky-texture.png"
-                    alt=""
-                    fill
-                    className="object-cover opacity-50 mix-blend-screen"
-                />
             </div>
 
             {/* Nantucket icon - large decorative element */}
