@@ -38,6 +38,13 @@ export default function Hero() {
                     priority
                     className="object-cover"
                 />
+                {/* Sky texture overlay */}
+                <Image
+                    src="/images/Texturelabs_Sky_170L-transparent.png"
+                    alt=""
+                    fill
+                    className="object-cover opacity-50 mix-blend-overlay"
+                />
             </div>
 
             {/* Nantucket icon - large decorative element */}
@@ -47,7 +54,7 @@ export default function Hero() {
                     alt=""
                     width={1200}
                     height={780}
-                    className="h-auto w-[90vw] md:w-[65vw]"
+                    className="h-auto w-[140vw] md:w-[65vw] max-w-none"
                     aria-hidden="true"
                 />
             </div>
