@@ -43,7 +43,7 @@ export default function Hero() {
                     src="/images/Texturelabs_Sky_170L-transparent.png"
                     alt=""
                     fill
-                    className="object-cover opacity-50 mix-blend-overlay"
+                    className="object-cover"
                 />
             </div>
 
