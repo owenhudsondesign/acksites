@@ -43,7 +43,7 @@ export default function Hero() {
                     src="/images/sky-texture.png"
                     alt=""
                     fill
-                    className="object-cover"
+                    className="object-cover opacity-50 mix-blend-screen"
                 />
             </div>
 
