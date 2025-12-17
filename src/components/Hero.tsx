@@ -40,7 +40,7 @@ export default function Hero() {
                 />
                 {/* Sky texture overlay */}
                 <Image
-                    src="/images/Texturelabs_Sky_170L-transparent.png"
+                    src="/images/sky-texture.png"
                     alt=""
                     fill
                     className="object-cover"
