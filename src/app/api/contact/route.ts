@@ -8,7 +8,7 @@ export async function POST(request: Request) {
         const resend = new Resend(process.env.RESEND_API_KEY);
 
         await resend.emails.send({
-            from: 'AckSites <onboarding@resend.dev>',
+            from: 'AckSites <noreply@mail.acksites.com>',
             to: 'hello@acksites.com',
             subject: `New inquiry from ${name}`,
             html: `
