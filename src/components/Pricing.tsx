@@ -42,7 +42,7 @@ const tiers = [
             '99.9% uptime guarantee',
             '3 updates/revisions per month',
         ],
-        cta: 'Add to Plan',
+        cta: 'Get Started',
         popular: false,
     },
 ];
