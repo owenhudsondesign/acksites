@@ -14,13 +14,13 @@ const projects = [
         displayUrl: 'tripleeightdistillery.com',
     },
     {
-        name: 'Nantucket Civic Index',
+        name: 'Civic Index',
         description: 'AI-powered town meeting search platform',
         category: 'Civic Tech',
         color: '#2563eb',
         image: '/images/nantucket-civic-index.png',
         url: 'https://nantucket.civicindex.io',
-        displayUrl: 'nantucket.civicindex.io',
+        displayUrl: 'civicindex.io',
     },
 ];
 
