@@ -5,28 +5,22 @@ import Image from 'next/image';
 
 const projects = [
     {
-        name: 'Rodriguez Laundry',
-        description: 'Laundry pickup & delivery service for vacation rentals',
-        category: 'Service Business',
-        color: '#1e3a5f',
-        image: '/images/rodriguez-laundry.jpg',
-        url: 'https://rodriguezlaundry.vercel.app/',
+        name: 'Triple Eight Distillery',
+        description: 'Craft spirits distillery on Nantucket Island',
+        category: 'Distillery',
+        color: '#8b5c2a',
+        image: '/images/triple-eight-distillery.png',
+        url: 'https://tripleeightdistillery.com',
+        displayUrl: 'tripleeightdistillery.com',
     },
     {
-        name: 'Tito Construction',
-        description: 'Custom carpentry & construction services',
-        category: 'Construction',
-        color: '#b45309',
-        image: '/images/tito-construction.jpg',
-        url: 'https://titoconstruction.vercel.app/',
-    },
-    {
-        name: 'Sunshine Cleaning',
-        description: 'Professional cleaning for homes & vacation rentals',
-        category: 'Service Business',
-        color: '#f59e0b',
-        image: '/images/sunshine-cleaning.jpg',
-        url: 'https://sunshine-cleaning-ruddy.vercel.app/',
+        name: 'Nantucket Civic Index',
+        description: 'AI-powered town meeting search platform',
+        category: 'Civic Tech',
+        color: '#2563eb',
+        image: '/images/nantucket-civic-index.png',
+        url: 'https://nantucket.civicindex.io',
+        displayUrl: 'nantucket.civicindex.io',
     },
 ];
 
@@ -75,7 +69,7 @@ export default function Work() {
                 </div>
 
                 {/* Projects grid */}
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
                     {projects.map((project, index) => (
                         <a
                             key={index}
@@ -102,7 +96,7 @@ export default function Work() {
                                                 <div className="w-2.5 h-2.5 rounded-full bg-[#28c840]"></div>
                                             </div>
                                             <div className="flex-1 bg-white rounded-md text-[10px] text-gray-400 px-2 py-1 text-center font-mono truncate">
-                                                {project.name.toLowerCase().replace(/\s+/g, '')}.com
+                                                {project.displayUrl}
                                             </div>
                                         </div>
                                         {/* Website preview screenshot */}
