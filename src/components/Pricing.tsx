@@ -5,7 +5,7 @@ import { useEffect, useRef } from 'react';
 const tiers = [
     {
         name: 'Starter Site',
-        price: 'from $500',
+        price: '$500',
         description: 'For new businesses that need a clean, professional web presence.',
         features: [
             '5-page responsive website',
@@ -19,7 +19,7 @@ const tiers = [
     },
     {
         name: 'Custom Site',
-        price: 'from $1,500',
+        price: "Let's talk",
         description: 'For established businesses that need more.',
         features: [
             'Custom design & branding',
@@ -30,7 +30,7 @@ const tiers = [
             'Priority support',
         ],
         cta: 'Get Started',
-        popular: true,
+        popular: false,
     },
     {
         name: 'Hosting & Care',
