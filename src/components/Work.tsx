@@ -81,7 +81,7 @@ export default function Work() {
                             <div className="card-hover bg-[#252525] rounded-2xl overflow-hidden h-full">
                                 {/* Preview area */}
                                 <div
-                                    className="aspect-[4/3] relative overflow-hidden"
+                                    className="aspect-[16/10] relative overflow-hidden"
                                     style={{
                                         background: `linear-gradient(135deg, ${project.color}15, ${project.color}30)`,
                                     }}
