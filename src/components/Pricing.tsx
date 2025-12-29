@@ -30,6 +30,7 @@ const tiers = [
             'Priority support',
         ],
         cta: 'Get Started',
+        highlighted: true,
         popular: false,
     },
     {
@@ -92,7 +93,7 @@ export default function Pricing() {
                             className={`reveal opacity-0 animation-delay-${(index + 2) * 100} relative`}
                         >
                             <div
-                                className={`card-hover h-full rounded-2xl p-8 ${tier.popular
+                                className={`card-hover h-full rounded-2xl p-8 ${tier.highlighted
                                     ? 'bg-[#191919] text-white ring-4 ring-[#ff9433]'
                                     : 'bg-[#faf9f7] border border-gray-100'
                                     }`}
@@ -107,26 +108,26 @@ export default function Pricing() {
                                 {/* Header */}
                                 <div className="mb-6">
                                     <h3
-                                        className={`text-xl font-semibold mb-2 ${tier.popular ? 'text-white' : 'text-[#191919]'
+                                        className={`text-xl font-semibold mb-2 ${tier.highlighted ? 'text-white' : 'text-[#191919]'
                                             }`}
                                     >
                                         {tier.name}
                                     </h3>
                                     <div className="flex items-baseline gap-1">
                                         <span
-                                            className={`text-4xl font-bold ${tier.popular ? 'text-[#ff9433]' : 'text-[#191919]'
+                                            className={`text-4xl font-bold ${tier.highlighted ? 'text-[#ff9433]' : 'text-[#191919]'
                                                 }`}
                                         >
                                             {tier.price}
                                         </span>
                                         {tier.period && (
-                                            <span className={tier.popular ? 'text-gray-400' : 'text-[#4d4d4d]'}>
+                                            <span className={tier.highlighted ? 'text-gray-400' : 'text-[#4d4d4d]'}>
                                                 {tier.period}
                                             </span>
                                         )}
                                     </div>
                                     <p
-                                        className={`text-sm mt-3 ${tier.popular ? 'text-gray-300' : 'text-[#4d4d4d]'
+                                        className={`text-sm mt-3 ${tier.highlighted ? 'text-gray-300' : 'text-[#4d4d4d]'
                                             }`}
                                     >
                                         {tier.description}
@@ -138,12 +139,11 @@ export default function Pricing() {
                                     {tier.features.map((feature, featureIndex) => (
                                         <li
                                             key={featureIndex}
-                                            className={`flex items-center gap-3 text-sm ${tier.popular ? 'text-gray-200' : 'text-[#4d4d4d]'
+                                            className={`flex items-center gap-3 text-sm ${tier.highlighted ? 'text-gray-200' : 'text-[#4d4d4d]'
                                                 }`}
                                         >
                                             <svg
-                                                className={`w-5 h-5 flex-shrink-0 ${tier.popular ? 'text-[#ff9433]' : 'text-[#ff9433]'
-                                                    }`}
+                                                className="w-5 h-5 flex-shrink-0 text-[#ff9433]"
                                                 fill="none"
                                                 viewBox="0 0 24 24"
                                                 stroke="currentColor"
@@ -163,7 +163,7 @@ export default function Pricing() {
                                 {/* CTA */}
                                 <a
                                     href="#contact"
-                                    className={`block text-center py-3 px-6 rounded-full font-semibold transition-all duration-300 ${tier.popular
+                                    className={`block text-center py-3 px-6 rounded-full font-semibold transition-all duration-300 ${tier.highlighted
                                         ? 'bg-[#ff9433] text-white hover:bg-[#e67d1a]'
                                         : 'bg-[#191919] text-white hover:bg-[#333]'
                                         }`}
