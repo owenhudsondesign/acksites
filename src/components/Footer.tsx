@@ -49,22 +49,6 @@ export default function Footer() {
                         hello@acksites.com
                     </a>
                 </div>
-
-                {/* Bottom wave decoration */}
-                <div className="mt-12 pt-8 border-t border-gray-800/50 flex justify-center">
-                    <svg
-                        className="w-24 h-6 text-gray-800"
-                        viewBox="0 0 100 24"
-                        fill="none"
-                    >
-                        <path
-                            d="M0 12C10 12 10 6 20 6C30 6 30 12 40 12C50 12 50 6 60 6C70 6 70 12 80 12C90 12 90 6 100 6"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                        />
-                    </svg>
-                </div>
             </div>
         </footer>
     );
