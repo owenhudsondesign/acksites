@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import Image from 'next/image';
 
 export default function Contact() {
     const [isSubmitted, setIsSubmitted] = useState(false);
@@ -58,17 +57,7 @@ export default function Contact() {
     };
 
     return (
-        <section id="contact" ref={sectionRef} className="section-padding bg-[#191919] relative overflow-hidden">
-            {/* Background image */}
-            <div className="absolute inset-0">
-                <Image
-                    src="/images/acksites-bg-blue-whisp.png"
-                    alt=""
-                    fill
-                    className="object-cover opacity-60"
-                />
-            </div>
-
+        <section id="contact" ref={sectionRef} className="section-padding relative overflow-hidden">
             <div className="container-custom relative z-10">
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
                     {/* Left content */}
@@ -79,10 +68,9 @@ export default function Contact() {
                         <h2 className="reveal opacity-0 animation-delay-100 text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6">
                             Ready to build something great?
                         </h2>
-                        <p className="reveal opacity-0 animation-delay-200 text-lg text-gray-300 leading-relaxed mb-10">
+                        <p className="reveal opacity-0 animation-delay-200 text-lg text-white/80 leading-relaxed mb-10">
                             Tell us about your project and we&apos;ll get back to you within one
-                            business day. No pressure, no obligation, just a conversation about
-                            how we can help.
+                            business day. We&apos;d love to hear what you&apos;re working on.
                         </p>
 
                         {/* Contact info */}
@@ -104,7 +92,7 @@ export default function Contact() {
                                     </svg>
                                 </div>
                                 <div>
-                                    <p className="text-gray-400 text-sm">Email us at</p>
+                                    <p className="text-white/70 text-sm">Email us at</p>
                                     <a
                                         href="mailto:hello@acksites.com"
                                         className="text-white font-medium hover:text-[#ff9433] transition-colors"
@@ -136,7 +124,7 @@ export default function Contact() {
                                     </svg>
                                 </div>
                                 <div>
-                                    <p className="text-gray-400 text-sm">Based in</p>
+                                    <p className="text-white/70 text-sm">Based in</p>
                                     <p className="text-white font-medium">Nantucket, MA</p>
                                 </div>
                             </div>

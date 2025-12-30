@@ -4,7 +4,7 @@ export default function Footer() {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="bg-[#0f0f0f] py-12 lg:py-16">
+        <footer className="bg-[#0f0f0f] py-12 lg:py-16 relative z-10">
             <div className="container-custom">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-8">
                     {/* Logo */}
@@ -22,9 +22,6 @@ export default function Footer() {
                     <div className="text-center md:text-left">
                         <p className="text-gray-500 text-sm">
                             © {currentYear} AckSites. All rights reserved.
-                        </p>
-                        <p className="text-gray-600 text-sm mt-1">
-                            Based in Nantucket, MA. Building for island businesses.
                         </p>
                     </div>
 

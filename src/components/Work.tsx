@@ -46,21 +46,11 @@ export default function Work() {
     }, []);
 
     return (
-        <section id="work" ref={sectionRef} className="section-padding bg-[#191919] relative overflow-hidden">
-            {/* Background image */}
-            <div className="absolute inset-0">
-                <Image
-                    src="/images/acksites-bg-blue.png"
-                    alt=""
-                    fill
-                    className="object-cover opacity-80"
-                />
-            </div>
-
+        <section id="work" ref={sectionRef} className="section-padding relative overflow-hidden">
             <div className="container-custom relative z-10">
                 {/* Section header */}
                 <div className="text-center mb-16 lg:mb-20">
-                    <span className="reveal opacity-0 inline-block text-[#ff9433] font-semibold text-sm uppercase tracking-wider mb-4">
+                    <span className="reveal opacity-0 inline-block text-white font-semibold text-sm uppercase tracking-wider mb-4">
                         Recent Projects
                     </span>
                     <h2 className="reveal opacity-0 animation-delay-100 text-3xl md:text-4xl lg:text-5xl font-semibold text-white max-w-2xl mx-auto leading-tight">
