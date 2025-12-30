@@ -21,14 +21,14 @@ export default function Home() {
           priority
           className="object-cover"
         />
-        {/* Nantucket icon - large decorative element */}
-        <div className="absolute left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-[-5%] top-1/2 -translate-y-1/2 opacity-10 pointer-events-none transform-gpu">
+        {/* Nantucket icon - large decorative element (hidden on mobile to avoid scroll jank) */}
+        <div className="hidden md:block absolute md:right-[-5%] top-1/2 -translate-y-1/2 opacity-10 pointer-events-none">
           <Image
             src="/nantucket-icon-white.svg"
             alt=""
             width={1200}
             height={780}
-            className="h-auto w-[140vw] md:w-[65vw] max-w-none"
+            className="h-auto w-[65vw] max-w-none"
             aria-hidden="true"
           />
         </div>
