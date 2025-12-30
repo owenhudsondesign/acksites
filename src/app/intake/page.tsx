@@ -107,17 +107,22 @@ ${formData.additionalNotes || 'None'}
     }
 
     return (
-        <div className="min-h-screen relative">
-            <Image
-                src="/images/orange-background.png"
-                alt=""
-                fill
-                priority
-                className="object-cover -z-10"
-            />
-            {/* Header */}
-            <div className="py-8 px-6">
-                <div className="max-w-2xl mx-auto">
+        <>
+            {/* Fixed background */}
+            <div className="fixed inset-0 h-screen w-full -z-10">
+                <Image
+                    src="/images/orange-background.png"
+                    alt=""
+                    fill
+                    priority
+                    className="object-cover"
+                />
+            </div>
+
+            {/* Scrollable content */}
+            <div className="relative min-h-screen flex flex-col items-center justify-center py-8 px-6">
+                {/* Header */}
+                <div className="w-full max-w-2xl mb-8">
                     <Image
                         src="/acksites-logo-white.svg"
                         alt="AckSites"
@@ -126,11 +131,9 @@ ${formData.additionalNotes || 'None'}
                         className="h-8 w-auto"
                     />
                 </div>
-            </div>
 
-            {/* Form Container */}
-            <div className="px-6 pb-12">
-                <div className="max-w-2xl mx-auto bg-white rounded-2xl shadow-2xl p-8 md:p-12">
+                {/* Form Container */}
+                <div className="w-full max-w-2xl bg-white rounded-2xl shadow-2xl p-8 md:p-12">
                     <h1 className="text-3xl md:text-4xl font-semibold text-[#191919] mb-2">
                         Project Intake Form
                     </h1>
@@ -377,6 +380,6 @@ ${formData.additionalNotes || 'None'}
                     </form>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
