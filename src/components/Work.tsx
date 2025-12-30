@@ -22,6 +22,15 @@ const projects = [
         url: 'https://nantucket.civicindex.io',
         displayUrl: 'civicindex.io',
     },
+    {
+        name: 'Owen Hudson Design',
+        description: 'Personal portfolio for a multi-disciplinary designer',
+        category: 'Portfolio',
+        color: '#333333',
+        image: '/images/ohd-mockup.png',
+        url: 'https://owenhudson.design',
+        displayUrl: 'owenhudson.design',
+    },
 ];
 
 export default function Work() {
