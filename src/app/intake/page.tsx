@@ -120,8 +120,11 @@ export default function IntakePage() {
                 {/* Form Container */}
                 <div className="w-full max-w-2xl bg-white rounded-2xl shadow-2xl p-8 md:p-12">
                     <h1 className="text-3xl md:text-4xl font-semibold text-[#191919] mb-2">
-                        Project Intake Form
+                        Start Your 48-Hour Website Build
                     </h1>
+                    <p className="text-[#ff9433] font-semibold text-lg mb-2">
+                        New Year&apos;s Special: $500 Flat Rate. No hidden fees.
+                    </p>
                     <p className="text-gray-600 mb-8">
                         Fill out the form below to get started. I&apos;ll be in touch within 24 hours.
                     </p>
