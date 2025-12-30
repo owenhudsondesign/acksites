@@ -61,10 +61,10 @@ export default function Work() {
                 {/* Section header */}
                 <div className="text-center mb-16 lg:mb-20">
                     <span className="reveal opacity-0 inline-block text-[#ff9433] font-semibold text-sm uppercase tracking-wider mb-4">
-                        Our Work
+                        Recent Projects
                     </span>
                     <h2 className="reveal opacity-0 animation-delay-100 text-3xl md:text-4xl lg:text-5xl font-semibold text-white max-w-2xl mx-auto leading-tight">
-                        Websites that work as hard as you do
+                        Websites that bring in customers
                     </h2>
                 </div>
 
