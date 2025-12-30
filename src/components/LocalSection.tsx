@@ -77,7 +77,7 @@ export default function LocalSection() {
                         </h2>
                         <p className="reveal opacity-0 animation-delay-200 text-lg text-[#4d4d4d] leading-relaxed mb-8">
                             We&apos;re not a mainland agency that&apos;s never set foot on the island.
-                            AckSites is based in Nantucket — we understand seasonal rhythms,
+                            AckSites is based in Nantucket. We understand seasonal rhythms,
                             local customers, and what island businesses actually need.
                         </p>
 

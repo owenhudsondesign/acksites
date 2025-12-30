@@ -24,7 +24,7 @@ export default function Footer() {
                             © {currentYear} AckSites. All rights reserved.
                         </p>
                         <p className="text-gray-600 text-sm mt-1">
-                            Based in Nantucket, MA — building for island businesses.
+                            Based in Nantucket, MA. Building for island businesses.
                         </p>
                     </div>
 

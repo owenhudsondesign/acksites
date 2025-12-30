@@ -22,7 +22,7 @@ const services = [
         ),
         title: 'Website Redesigns',
         description:
-            "Already have a site that's not working? We'll rebuild it right — faster, mobile-friendly, and built to convert.",
+            "Already have a site that's not working? We'll rebuild it right: faster, mobile-friendly, and built to convert.",
         highlight: null,
     },
     {

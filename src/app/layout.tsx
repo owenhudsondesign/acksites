@@ -9,11 +9,11 @@ const bricolage = Bricolage_Grotesque({
 });
 
 export const metadata: Metadata = {
-  title: "AckSites — Nantucket Web Design Studio",
+  title: "AckSites | Nantucket Web Design Studio",
   description: "Web design and hosting for Nantucket businesses. Fast, beautiful websites built by a local studio.",
   keywords: "Nantucket web design, Nantucket website, island web designer, ACK web studio",
   openGraph: {
-    title: "AckSites — Nantucket Web Design Studio",
+    title: "AckSites | Nantucket Web Design Studio",
     description: "Web design and hosting for Nantucket businesses.",
     url: "https://acksites.com",
     siteName: "AckSites",

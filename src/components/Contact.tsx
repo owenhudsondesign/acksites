@@ -81,7 +81,7 @@ export default function Contact() {
                         </h2>
                         <p className="reveal opacity-0 animation-delay-200 text-lg text-gray-300 leading-relaxed mb-10">
                             Tell us about your project and we&apos;ll get back to you within one
-                            business day. No pressure, no obligation — just a conversation about
+                            business day. No pressure, no obligation, just a conversation about
                             how we can help.
                         </p>
 
