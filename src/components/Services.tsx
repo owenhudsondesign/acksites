@@ -12,7 +12,7 @@ const services = [
         title: 'Website Design',
         description:
             'Clean, fast websites built for how your customers actually find you. Perfect for restaurants, shops, contractors, and service businesses.',
-        highlight: 'Most Popular',
+        highlight: null,
     },
     {
         icon: (
