@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import Image from 'next/image';
 
 export default function Contact() {
     const [isSubmitted, setIsSubmitted] = useState(false);
@@ -58,9 +59,15 @@ export default function Contact() {
 
     return (
         <section id="contact" ref={sectionRef} className="section-padding bg-[#191919] relative overflow-hidden">
-            {/* Background decoration */}
-            <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-r from-[#ff9433]/10 to-transparent"></div>
-            <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#ff9433]/5 rounded-full blur-3xl"></div>
+            {/* Background image */}
+            <div className="absolute inset-0">
+                <Image
+                    src="/images/acksites-bg-blue-whisp.png"
+                    alt=""
+                    fill
+                    className="object-cover opacity-60"
+                />
+            </div>
 
             <div className="container-custom relative z-10">
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
