@@ -6,7 +6,7 @@ import Image from 'next/image';
 const projects = [
     {
         name: 'Triple Eight Distillery',
-        description: 'Craft spirits distillery on Nantucket Island',
+        description: 'Award winning craft spirits distillery',
         category: 'Distillery',
         color: '#8b5c2a',
         image: '/images/triple-eight-distillery.png',
@@ -15,7 +15,7 @@ const projects = [
     },
     {
         name: 'Civic Index',
-        description: 'AI-powered town meeting search platform',
+        description: 'AI powered public meeting search platform',
         category: 'Civic Tech',
         color: '#2563eb',
         image: '/images/nantucket-civic-index.png',

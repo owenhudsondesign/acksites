@@ -37,7 +37,7 @@ export default function About() {
                             A local web and logo designer
                         </h2>
                         <p className="reveal opacity-0 animation-delay-200 text-lg md:text-xl text-gray-600 leading-relaxed mb-6">
-                            I'm Owen, a designer from Nantucket. I grew up here, know the island, and understand what local businesses actually need online: something clean, fast, and easy to update. No bloated agency fees, no six-week timelines. Just good work at a fair price from someone you can actually reach.
+                            I'm Owen, a designer from Nantucket. I grew up here, know the island, and understand what local businesses actually need online: something clean, fast, and built to drive leads—set it and forget it. No bloated agency fees, no six-week timelines. Just good work at a fair price from someone you can actually reach.
                         </p>
                         <a
                             href="https://owenhudsondesign.com"
