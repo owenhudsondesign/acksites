@@ -40,7 +40,7 @@ export default function About() {
                             I'm Owen, a designer from Nantucket. I grew up here, know the island, and understand what local businesses actually need online: something clean, fast, and easy to update. No bloated agency fees, no six-week timelines. Just good work at a fair price from someone you can actually reach.
                         </p>
                         <a
-                            href="https://owenhudson.design"
+                            href="https://owenhudsondesign.com"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="reveal opacity-0 animation-delay-300 inline-flex items-center gap-2 text-[#ff9433] font-semibold hover:underline"
@@ -54,7 +54,7 @@ export default function About() {
 
                     {/* Browser mockup */}
                     <a
-                        href="https://owenhudson.design"
+                        href="https://owenhudsondesign.com"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="reveal opacity-0 animation-delay-200 group"
@@ -68,7 +68,7 @@ export default function About() {
                                     <div className="w-3 h-3 rounded-full bg-[#28c840]"></div>
                                 </div>
                                 <div className="flex-1 bg-white rounded-md text-xs text-gray-400 px-3 py-1.5 text-center font-mono">
-                                    owenhudson.design
+                                    owenhudsondesign.com
                                 </div>
                             </div>
                             {/* Website preview screenshot */}
