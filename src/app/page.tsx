@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       {/* Fixed orange background that stays in place while content scrolls over */}
-      <div className="fixed inset-0 z-0">
+      <div className="fixed inset-0 z-0 transform-gpu">
         <Image
           src="/images/orange-background.png"
           alt=""
@@ -22,7 +22,7 @@ export default function Home() {
           className="object-cover"
         />
         {/* Nantucket icon - large decorative element */}
-        <div className="absolute left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-[-5%] top-1/2 -translate-y-1/2 opacity-10 pointer-events-none">
+        <div className="absolute left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-[-5%] top-1/2 -translate-y-1/2 opacity-10 pointer-events-none transform-gpu">
           <Image
             src="/nantucket-icon-white.svg"
             alt=""
