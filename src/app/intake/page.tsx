@@ -245,9 +245,9 @@ ${formData.additionalNotes || 'None'}
                             </div>
                             {formData.hasWebsite === 'Yes' && (
                                 <input
-                                    type="url"
+                                    type="text"
                                     name="websiteUrl"
-                                    placeholder="https://yourwebsite.com"
+                                    placeholder="yourwebsite.com"
                                     value={formData.websiteUrl}
                                     onChange={handleChange}
                                     className="mt-3 w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ff9433] focus:border-transparent outline-none transition"
