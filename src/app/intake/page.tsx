@@ -123,7 +123,7 @@ export default function IntakePage() {
                         Start Your 48-Hour Website Build
                     </h1>
                     <p className="text-[#ff9433] font-semibold text-lg mb-2">
-                        New Year&apos;s Special: $500 Flat Rate. No hidden fees.
+                        $500 flat rate + $20/month hosting
                     </p>
                     <p className="text-gray-600 mb-8">
                         Fill out the form below to get started. I&apos;ll be in touch within 24 hours.
