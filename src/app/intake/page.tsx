@@ -29,6 +29,8 @@ export default function IntakePage() {
     });
 
     const [submitted, setSubmitted] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState('');
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
         const { name, value } = e.target;
@@ -44,43 +46,26 @@ export default function IntakePage() {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+        setLoading(true);
+        setError('');
 
-        // Format the data for submission
-        const selectedPages = Object.entries(formData.pages)
-            .filter(([_, checked]) => checked)
-            .map(([page]) => page.charAt(0).toUpperCase() + page.slice(1))
-            .join(', ');
+        try {
+            const response = await fetch('/api/intake', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
 
-        const emailBody = `
-New AckSites Intake Form Submission
+            if (!response.ok) {
+                throw new Error('Failed to submit');
+            }
 
-Business Name: ${formData.businessName}
-Contact Name: ${formData.yourName}
-Email: ${formData.email}
-Phone: ${formData.phone || 'Not provided'}
-
-Business Description:
-${formData.businessDescription}
-
-Existing Website: ${formData.hasWebsite}${formData.websiteUrl ? ` - ${formData.websiteUrl}` : ''}
-
-Pages Needed: ${selectedPages}${formData.otherPages ? ` (Other: ${formData.otherPages})` : ''}
-
-Has Logo: ${formData.hasLogo}
-Has Photos: ${formData.hasPhotos}
-
-Website Inspiration:
-${formData.websiteInspiration || 'Not provided'}
-
-Additional Notes:
-${formData.additionalNotes || 'None'}
-        `.trim();
-
-        // Open email client with pre-filled data
-        const mailtoLink = `mailto:hello@acksites.com?subject=Intake Form: ${encodeURIComponent(formData.businessName)}&body=${encodeURIComponent(emailBody)}`;
-        window.location.href = mailtoLink;
-
-        setSubmitted(true);
+            setSubmitted(true);
+        } catch (err) {
+            setError('Something went wrong. Please try again or email hello@acksites.com directly.');
+        } finally {
+            setLoading(false);
+        }
     };
 
     if (submitted) {
@@ -100,7 +85,7 @@ ${formData.additionalNotes || 'None'}
                         </svg>
                     </div>
                     <h2 className="text-2xl font-semibold text-[#191919] mb-4">Thank you!</h2>
-                    <p className="text-gray-600">Your email client should have opened with the form details. If it didn&apos;t, please email me directly at hello@acksites.com</p>
+                    <p className="text-gray-600">Your form has been submitted. I&apos;ll be in touch within 24 hours.</p>
                 </div>
             </div>
         );
@@ -370,12 +355,20 @@ ${formData.additionalNotes || 'None'}
                             />
                         </div>
 
+                        {/* Error Message */}
+                        {error && (
+                            <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg">
+                                {error}
+                            </div>
+                        )}
+
                         {/* Submit Button */}
                         <button
                             type="submit"
-                            className="w-full bg-[#ff9433] hover:bg-[#e8852e] text-white font-semibold py-4 px-6 rounded-lg transition-colors"
+                            disabled={loading}
+                            className="w-full bg-[#ff9433] hover:bg-[#e8852e] disabled:bg-[#ffb980] text-white font-semibold py-4 px-6 rounded-lg transition-colors"
                         >
-                            Submit
+                            {loading ? 'Submitting...' : 'Submit'}
                         </button>
                     </form>
                 </div>
