@@ -14,13 +14,13 @@ const projects = [
         displayUrl: 'tripleeightdistillery.com',
     },
     {
-        name: 'Civic Index',
-        description: 'AI powered public meeting search platform',
-        category: 'Civic Tech',
-        color: '#2563eb',
-        image: '/images/nantucket-civic-index.png',
-        url: 'https://nantucket.civicindex.io',
-        displayUrl: 'civicindex.io',
+        name: 'Island Shine Cleaning',
+        description: 'Professional cleaning services',
+        category: 'Cleaning',
+        color: '#0ea5e9',
+        image: '/images/island-shine.png',
+        url: 'https://islandshinecleaning.com',
+        displayUrl: 'islandshinecleaning.com',
     },
 ];
 
