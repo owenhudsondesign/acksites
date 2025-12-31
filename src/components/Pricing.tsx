@@ -8,7 +8,7 @@ const tiers = [
         price: '$500',
         description: 'For new businesses that need a clean, professional web presence.',
         features: [
-            '5-page responsive website',
+            '1-5 page responsive website',
             'Mobile-friendly design',
             'Basic SEO setup',
             'Contact form integration',
