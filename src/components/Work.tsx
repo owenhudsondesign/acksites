@@ -19,8 +19,8 @@ const projects = [
         category: 'Cleaning',
         color: '#0ea5e9',
         image: '/images/island-shine.png',
-        url: 'https://islandshinecleaning.com',
-        displayUrl: 'islandshinecleaning.com',
+        url: 'https://islandshinecleaningco.vercel.app',
+        displayUrl: 'islandshinecleaningco.vercel.app',
     },
 ];
 
