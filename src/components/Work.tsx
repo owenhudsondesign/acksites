@@ -14,7 +14,7 @@ const projects = [
         displayUrl: 'tripleeightdistillery.com',
     },
     {
-        name: 'Island Shine Cleaning',
+        name: 'Island Shine Cleaning (example)',
         description: 'Professional cleaning services',
         category: 'Cleaning',
         color: '#0ea5e9',
