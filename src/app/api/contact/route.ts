@@ -5,9 +5,16 @@ export async function POST(request: Request) {
     try {
         const { name, email, business, message } = await request.json();
 
+        console.log('Contact form submission received:', { name, email, business });
+
+        if (!process.env.RESEND_API_KEY) {
+            console.error('RESEND_API_KEY is not configured');
+            return NextResponse.json({ error: 'Email service not configured' }, { status: 500 });
+        }
+
         const resend = new Resend(process.env.RESEND_API_KEY);
 
-        await resend.emails.send({
+        const result = await resend.emails.send({
             from: 'AckSites <noreply@mail.acksites.com>',
             to: 'hello@acksites.com',
             subject: `New inquiry from ${name}`,
@@ -21,6 +28,8 @@ export async function POST(request: Request) {
             `,
             replyTo: email,
         });
+
+        console.log('Email sent successfully:', result);
 
         return NextResponse.json({ success: true });
     } catch (error) {
