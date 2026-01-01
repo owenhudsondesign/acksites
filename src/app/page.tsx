@@ -19,7 +19,7 @@ export default function Home() {
           alt=""
           fill
           priority
-          className="object-cover"
+          className="object-cover object-left md:object-center"
         />
         {/* Nantucket icon - large decorative element (hidden on mobile to avoid scroll jank) */}
         <div className="hidden md:block absolute md:right-[-5%] top-1/2 -translate-y-1/2 opacity-10 pointer-events-none">
