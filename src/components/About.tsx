@@ -39,27 +39,17 @@ export default function About() {
                         <p className="reveal opacity-0 animation-delay-200 text-lg md:text-xl text-gray-600 leading-relaxed mb-6">
                             I'm Owen, a designer from Nantucket. I grew up here, know the island, and understand what local businesses actually need online: something clean, fast, and built to drive leads. Set it and forget it. No bloated agency fees, no six-week timelines. Just good work at a fair price from someone you can actually reach.
                         </p>
-                        <a
-                            href="https://owenhudsondesign.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="reveal opacity-0 animation-delay-300 inline-flex items-center gap-2 text-[#ff9433] font-semibold hover:underline"
-                        >
+                        <span className="reveal opacity-0 animation-delay-300 inline-flex items-center gap-2 text-[#ff9433] font-semibold">
                             View my full portfolio
                             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                             </svg>
-                        </a>
+                        </span>
                     </div>
 
                     {/* Browser mockup */}
-                    <a
-                        href="https://owenhudsondesign.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="reveal opacity-0 animation-delay-200 group"
-                    >
-                        <div className="bg-white rounded-lg shadow-2xl overflow-hidden transform group-hover:scale-[1.02] transition-transform duration-500">
+                    <div className="reveal opacity-0 animation-delay-200">
+                        <div className="bg-white rounded-lg shadow-2xl overflow-hidden">
                             {/* Browser chrome */}
                             <div className="bg-gray-100 px-4 py-3 flex items-center gap-2 border-b border-gray-200">
                                 <div className="flex gap-1.5">
@@ -81,7 +71,7 @@ export default function About() {
                                 />
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </section>
