@@ -5,22 +5,22 @@ import Image from 'next/image';
 
 const projects = [
     {
-        name: 'Triple Eight Distillery',
-        description: 'Award winning craft spirits distillery',
-        category: 'Distillery',
-        color: '#8b5c2a',
-        image: '/images/triple-eight-distillery.png',
-        url: 'https://tripleeightdistillery.com',
-        displayUrl: 'tripleeightdistillery.com',
+        name: 'BedSync',
+        description: 'Voice-first fluid tracking for clinicians',
+        category: 'Healthcare',
+        color: '#2196c9',
+        image: '/images/bedsync.png',
+        url: 'https://bedsync.io',
+        displayUrl: 'bedsync.io',
     },
     {
-        name: "Allan's Landscaping",
-        description: 'Lawn care, landscaping, and hardscape construction',
-        category: 'Landscaping',
-        color: '#3d5a3e',
-        image: '/images/allans-landscaping.png',
-        url: 'https://allanslandscaping.com',
-        displayUrl: 'allanslandscaping.com',
+        name: 'Vocalog',
+        description: 'Voice memos to structured field reports',
+        category: 'SaaS',
+        color: '#c8942a',
+        image: '/images/vocalog.png',
+        url: 'https://vocalog.io',
+        displayUrl: 'vocalog.io',
     },
 ];
 
