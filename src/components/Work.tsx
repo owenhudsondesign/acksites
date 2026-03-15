@@ -22,6 +22,15 @@ const projects = [
         url: 'https://vocalog.io',
         displayUrl: 'vocalog.io',
     },
+    {
+        name: "Allan's Landscaping",
+        description: 'Lawn care, landscaping, and hardscape construction',
+        category: 'Landscaping',
+        color: '#3d5a3e',
+        image: '/images/allans-landscaping.png',
+        url: 'https://allanslandscaping.com',
+        displayUrl: 'allanslandscaping.com',
+    },
 ];
 
 export default function Work() {
@@ -59,7 +68,7 @@ export default function Work() {
                 </div>
 
                 {/* Projects grid */}
-                <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
                     {projects.map((project, index) => (
                         <a
                             key={index}
