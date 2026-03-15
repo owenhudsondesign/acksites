@@ -58,7 +58,7 @@ export default function About() {
                             {/* Website preview screenshot */}
                             <div className="relative aspect-[16/9]">
                                 <Image
-                                    src="/images/ohd-mockup.png"
+                                    src="/images/ohd-portfolio.png"
                                     alt="Owen Hudson Design portfolio website"
                                     fill
                                     className="object-cover object-top"

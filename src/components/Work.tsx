@@ -14,13 +14,13 @@ const projects = [
         displayUrl: 'tripleeightdistillery.com',
     },
     {
-        name: 'Island Shine Cleaning (example)',
-        description: 'Professional cleaning services',
-        category: 'Cleaning',
-        color: '#0ea5e9',
-        image: '/images/island-shine.png',
-        url: 'https://islandshinecleaningco.vercel.app',
-        displayUrl: 'islandshinecleaningco.vercel.app',
+        name: "Allan's Landscaping",
+        description: 'Lawn care, landscaping, and hardscape construction',
+        category: 'Landscaping',
+        color: '#3d5a3e',
+        image: '/images/allans-landscaping.png',
+        url: 'https://allanslandscaping.com',
+        displayUrl: 'allanslandscaping.com',
     },
 ];
 
