@@ -37,34 +37,52 @@ export default function About() {
                             A local web and logo designer
                         </h2>
                         <p className="reveal opacity-0 animation-delay-200 text-lg md:text-xl text-gray-600 leading-relaxed mb-6">
-                            I'm Owen, a designer from Nantucket. I grew up here, know the island, and understand what local businesses actually need online: something clean, fast, and built to drive leads. Set it and forget it. No bloated agency fees, no six-week timelines. Just good work at a fair price from someone you can actually reach.
+                            I&apos;m Owen Hudson — a designer from Nantucket. I grew up here, my family&apos;s been in business on this island for decades, and I know what local businesses actually need — good design and someone you can reach when something needs fixing. No bloated agency fees, no off-island templates, no six-week timelines. Good work, fair pricing, from a neighbor.
                         </p>
                     </div>
 
                     {/* Browser mockup */}
                     <div className="reveal opacity-0 animation-delay-200">
-                        <div className="bg-white rounded-lg shadow-2xl overflow-hidden">
-                            {/* Browser chrome */}
-                            <div className="bg-gray-100 px-4 py-3 flex items-center gap-2 border-b border-gray-200">
-                                <div className="flex gap-1.5">
-                                    <div className="w-3 h-3 rounded-full bg-[#ff5f57]"></div>
-                                    <div className="w-3 h-3 rounded-full bg-[#febc2e]"></div>
-                                    <div className="w-3 h-3 rounded-full bg-[#28c840]"></div>
+                        <a
+                            href="https://owenhudsondesign.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block max-w-sm mx-auto opacity-90 hover:opacity-100 transition-opacity"
+                        >
+                            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                                {/* Browser chrome */}
+                                <div className="bg-gray-100 px-3 py-2 flex items-center gap-2 border-b border-gray-200">
+                                    <div className="flex gap-1.5">
+                                        <div className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]"></div>
+                                        <div className="w-2.5 h-2.5 rounded-full bg-[#febc2e]"></div>
+                                        <div className="w-2.5 h-2.5 rounded-full bg-[#28c840]"></div>
+                                    </div>
+                                    <div className="flex-1 bg-white rounded-md text-[10px] text-gray-400 px-2 py-1 text-center font-mono">
+                                        owenhudsondesign.com
+                                    </div>
                                 </div>
-                                <div className="flex-1 bg-white rounded-md text-xs text-gray-400 px-3 py-1.5 text-center font-mono">
-                                    owenhudsondesign.com
+                                {/* Website preview screenshot */}
+                                <div className="relative aspect-[16/9]">
+                                    <Image
+                                        src="/images/ohd-portfolio.png"
+                                        alt="Owen Hudson Design portfolio website"
+                                        fill
+                                        className="object-cover object-top"
+                                    />
                                 </div>
                             </div>
-                            {/* Website preview screenshot */}
-                            <div className="relative aspect-[16/9]">
-                                <Image
-                                    src="/images/ohd-portfolio.png"
-                                    alt="Owen Hudson Design portfolio website"
-                                    fill
-                                    className="object-cover object-top"
-                                />
-                            </div>
-                        </div>
+                        </a>
+                        <p className="text-center text-sm text-gray-500 mt-4">
+                            More of my design work at{' '}
+                            <a
+                                href="https://owenhudsondesign.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-[#ff9433] hover:underline"
+                            >
+                                owenhudsondesign.com
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>

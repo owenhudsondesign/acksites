@@ -69,8 +69,7 @@ export default function Contact() {
                             Ready to build something great?
                         </h2>
                         <p className="reveal opacity-0 animation-delay-200 text-lg text-white/80 leading-relaxed mb-10">
-                            Tell us about your project and we&apos;ll get back to you within one
-                            business day. We&apos;d love to hear what you&apos;re working on.
+                            Tell us about your business and we&apos;ll get back to you within one business day.
                         </p>
 
                         {/* Contact info */}

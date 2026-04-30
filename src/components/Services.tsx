@@ -11,7 +11,7 @@ const services = [
         ),
         title: 'Website Design',
         description:
-            'Clean, fast websites built for how your customers actually find you. Perfect for restaurants, shops, contractors, and service businesses.',
+            'Custom websites designed around your business, not a template. Built to make off-island customers take you seriously.',
         highlight: null,
     },
     {
@@ -22,7 +22,7 @@ const services = [
         ),
         title: 'Website Redesigns',
         description:
-            "Already have a site that's not working? We'll rebuild it right: faster, mobile-friendly, and built to convert.",
+            "Have a site that's dated, slow, or built by someone who's never set foot on Nantucket? We'll rebuild it right — faster, mobile-first, and actually representative of what you do.",
         highlight: null,
     },
     {
@@ -31,9 +31,9 @@ const services = [
                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
             </svg>
         ),
-        title: 'Hosting & Support',
+        title: 'Care & Maintenance',
         description:
-            "Reliable hosting, security updates, and ongoing support. We keep things running so you don't have to think about it.",
+            "Hosting, security, content updates, and someone you can actually call. Your site stays current, you stay focused on running your business.",
         highlight: null,
     },
 ];

@@ -5,24 +5,6 @@ import Image from 'next/image';
 
 const projects = [
     {
-        name: 'BedSync',
-        description: 'Voice-first fluid tracking for clinicians',
-        category: 'Healthcare',
-        color: '#2196c9',
-        image: '/images/bedsync.png',
-        url: 'https://bedsync.io',
-        displayUrl: 'bedsync.io',
-    },
-    {
-        name: 'Vocalog',
-        description: 'Voice memos to structured field reports',
-        category: 'SaaS',
-        color: '#c8942a',
-        image: '/images/vocalog.png',
-        url: 'https://vocalog.io',
-        displayUrl: 'vocalog.io',
-    },
-    {
         name: "Allan's Landscaping",
         description: 'Lawn care, landscaping, and hardscape construction',
         category: 'Landscaping',
@@ -125,6 +107,11 @@ export default function Work() {
                         </a>
                     ))}
                 </div>
+
+                {/* Placeholder note */}
+                <p className="reveal opacity-0 text-center text-white/70 text-base md:text-lg mt-12 lg:mt-16 italic">
+                    More Nantucket businesses launching this season.
+                </p>
 
                 {/* CTA */}
                 <div className="reveal opacity-0 text-center mt-12 lg:mt-16">

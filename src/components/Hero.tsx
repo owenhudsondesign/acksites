@@ -43,20 +43,20 @@ export default function Hero() {
 
                     {/* Main headline */}
                     <h1 className="reveal opacity-0 animation-delay-100 text-5xl md:text-7xl lg:text-8xl font-semibold text-white leading-[1.05] tracking-tight mb-8">
-                        We build websites
+                        Hand-built websites
                         <br />
-                        for <span className="text-white/90">island businesses</span>
+                        for <span className="text-white/90">Nantucket businesses</span>
                     </h1>
 
                     {/* Subheadline */}
                     <p className="reveal opacity-0 animation-delay-200 text-xl md:text-2xl text-white/80 leading-relaxed max-w-xl mb-12">
-                        Fast, affordable websites for Nantucket restaurants, shops, contractors, and service providers.
+                        Custom design and a designer who actually lives here. For Nantucket restaurants, shops, contractors, and service providers.
                     </p>
 
                     {/* CTAs */}
                     <div className="reveal opacity-0 animation-delay-300 flex flex-col sm:flex-row gap-4">
                         <a href="#contact" className="inline-flex items-center gap-2 bg-white text-[#191919] px-8 py-4 rounded-full font-semibold text-sm hover:bg-white/90 transition-colors">
-                            Get Started - $500
+                            Start a Project
                             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                             </svg>
@@ -71,15 +71,15 @@ export default function Hero() {
                         <div className="flex flex-wrap gap-6 md:gap-10 text-white/80 text-sm font-medium">
                             <div className="flex items-center gap-2">
                                 <span className="w-2 h-2 rounded-full bg-white"></span>
-                                <span>100% Local</span>
+                                <span>Designed Locally</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <span className="w-2 h-2 rounded-full bg-white"></span>
-                                <span>48 Hour Turnaround</span>
+                                <span>Custom-Built</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <span className="w-2 h-2 rounded-full bg-white"></span>
-                                <span>Ongoing Support</span>
+                                <span>Built to Last</span>
                             </div>
                         </div>
                     </div>

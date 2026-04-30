@@ -85,7 +85,7 @@ export default function IntakePage() {
                         </svg>
                     </div>
                     <h2 className="text-2xl font-semibold text-[#191919] mb-4">Thank you!</h2>
-                    <p className="text-gray-600 mb-6">Your form has been submitted. I&apos;ll be in touch within 24 hours.</p>
+                    <p className="text-gray-600 mb-6">Your form has been submitted. I&apos;ll be in touch within one business day.</p>
                     <div className="flex flex-col sm:flex-row gap-3 justify-center">
                         <a
                             href="https://acksites.com"
@@ -139,13 +139,13 @@ export default function IntakePage() {
                 {/* Form Container */}
                 <div className="w-full max-w-2xl bg-white rounded-2xl shadow-2xl p-8 md:p-12">
                     <h1 className="text-3xl md:text-4xl font-semibold text-[#191919] mb-2">
-                        Start Your 48-Hour Website Build
+                        Start a Project
                     </h1>
                     <p className="text-[#ff9433] font-semibold text-lg mb-2">
-                        $500 flat rate + $20/month hosting
+                        $2,000 standard build + $50/month care plan
                     </p>
                     <p className="text-gray-600 mb-8">
-                        Fill out the form below to get started. I&apos;ll be in touch within 24 hours.
+                        Fill out the form below to get started. I&apos;ll be in touch within one business day.
                     </p>
 
                     <form onSubmit={handleSubmit} className="space-y-6">
