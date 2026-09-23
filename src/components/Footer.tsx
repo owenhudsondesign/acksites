@@ -8,7 +8,7 @@ export default function Footer() {
             <div className="container-custom">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-8">
                     {/* Logo */}
-                    <a href="#" className="transition-opacity hover:opacity-80">
+                    <a href="/" className="transition-opacity hover:opacity-80">
                         <Image
                             src="/acksites-logo.svg"
                             alt="AckSites"
@@ -26,7 +26,18 @@ export default function Footer() {
                     </div>
 
                     {/* Links */}
-                    <div className="flex items-center gap-6">
+                    <div className="flex flex-wrap items-center justify-center gap-6">
+                        <a href="/blog" className="text-gray-400 hover:text-[#ff9433] transition-colors text-sm">Guides</a>
+                        <a href="/faq" className="text-gray-400 hover:text-[#ff9433] transition-colors text-sm">FAQ</a>
+                        <a
+                            href="https://www.owenhudsondesign.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-400 hover:text-[#ff9433] transition-colors text-sm"
+                            title="Brand strategy, product design, and larger projects"
+                        >
+                            Owen Hudson
+                        </a>
                         <a
                             href="mailto:hello@acksites.com"
                             className="flex items-center gap-2 text-gray-400 hover:text-[#ff9433] transition-colors text-sm"

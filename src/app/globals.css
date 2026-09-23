@@ -266,3 +266,34 @@ textarea:focus {
 .pulse-soft {
   animation: pulse-soft 2s ease-in-out infinite;
 }
+
+/* Long-form guide content */
+.post-content {
+  color: var(--text-medium);
+  font-size: 1.0625rem;
+  line-height: 1.75;
+}
+.post-content h2 {
+  color: var(--text-dark);
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 2.5rem 0 0.75rem;
+}
+.post-content h3 {
+  color: var(--text-dark);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 2rem 0 0.5rem;
+}
+.post-content p { margin: 0 0 1rem; }
+.post-content ul, .post-content ol { margin: 0 0 1rem 1.25rem; }
+.post-content ul { list-style: disc; }
+.post-content ol { list-style: decimal; }
+.post-content li { margin-bottom: 0.4rem; }
+.post-content strong { color: var(--text-dark); }
+.post-content a { color: var(--brand-orange); text-decoration: underline; text-underline-offset: 3px; }
+.post-content a:hover { color: var(--brand-orange-dark); }
+.post-content table { width: 100%; border-collapse: collapse; margin: 0 0 1rem; font-size: 0.9rem; display: block; overflow-x: auto; }
+.post-content th, .post-content td { text-align: left; padding: 0.5rem 0.75rem 0.5rem 0; border-bottom: 1px solid #e5e5e5; vertical-align: top; }
+.post-content th { color: var(--text-dark); font-weight: 600; }
