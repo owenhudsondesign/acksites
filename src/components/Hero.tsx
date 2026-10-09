@@ -50,7 +50,7 @@ export default function Hero() {
 
                     {/* Subheadline */}
                     <p className="reveal opacity-0 animation-delay-200 text-xl md:text-2xl text-white/80 leading-relaxed max-w-xl mb-12">
-                        Custom design and a designer who actually lives here. For Nantucket restaurants, shops, contractors, and service providers.
+                        Custom design and a designer who is actually from here. For Nantucket restaurants, shops, contractors, and service providers.
                     </p>
 
                     {/* CTAs */}
